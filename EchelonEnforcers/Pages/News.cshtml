@@ -1,0 +1,74 @@
+﻿@page
+@model EchelonEnforcers.Pages.NewsModel
+
+@{
+    ViewData["Title"] = "News";
+}
+
+<h1>News</h1>
+
+<h4>News</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="News.Heading" class="control-label"></label>
+                <input asp-for="News.Heading" class="form-control" />
+                <span asp-validation-for="News.Heading" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="News.PageTitle" class="control-label"></label>
+                <input asp-for="News.PageTitle" class="form-control" />
+                <span asp-validation-for="News.PageTitle" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="News.Content" class="control-label"></label>
+                <input asp-for="News.Content" class="form-control" />
+                <span asp-validation-for="News.Content" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="News.ShortDescription" class="control-label"></label>
+                <input asp-for="News.ShortDescription" class="form-control" />
+                <span asp-validation-for="News.ShortDescription" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="News.FeaturedImageUrl" class="control-label"></label>
+                <input asp-for="News.FeaturedImageUrl" class="form-control" />
+                <span asp-validation-for="News.FeaturedImageUrl" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="News.UrlHandle" class="control-label"></label>
+                <input asp-for="News.UrlHandle" class="form-control" />
+                <span asp-validation-for="News.UrlHandle" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="News.PublishedDate" class="control-label"></label>
+                <input asp-for="News.PublishedDate" class="form-control" />
+                <span asp-validation-for="News.PublishedDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="News.Author" class="control-label"></label>
+                <input asp-for="News.Author" class="form-control" />
+                <span asp-validation-for="News.Author" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="News.Visible" /> @Html.DisplayNameFor(model => model.News.Visible)
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -15,6 +15,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="jd14cmuc.p5l~" />
+    <None Remove="Views\Index.cshtml.cs~RF13783fc.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="7.0.13" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.13" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="7.0.13" />
