@@ -10,15 +10,23 @@ for details on configuring this project to bundle and minify static web assets. 
   border-color: #1861ac;
 }
 
+<<<<<<< HEAD
 .nav-logo[b-lvnfsc7dse] {
+=======
+./*nav-logo {
+>>>>>>> a22c04f05efee47888f5330dceafe892c783e142
     content: '';
     position: absolute;
     z-index: -1;
     inset: 0;
     opacity: .2;
+<<<<<<< HEAD
     margin-left: 10px;
     margin-top: 10px;
 }
+=======
+}*/
+>>>>>>> a22c04f05efee47888f5330dceafe892c783e142
 
 .border-top[b-lvnfsc7dse] {
   border-top: 1px solid #e5e5e5;
@@ -45,7 +53,10 @@ button.accept-policy[b-lvnfsc7dse] {
 }
 
 .bg-img[b-lvnfsc7dse]{
+<<<<<<< HEAD
     background-size:cover; 
+=======
+>>>>>>> a22c04f05efee47888f5330dceafe892c783e142
     height: 100vh;
     width: 100vw;
     object-fit: cover;

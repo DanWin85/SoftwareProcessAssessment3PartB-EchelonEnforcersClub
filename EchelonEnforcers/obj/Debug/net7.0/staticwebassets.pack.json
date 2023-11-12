@@ -9,6 +9,7 @@
       "PackagePath": "staticwebassets\\Images\\Echelon Enforcers .png"
     },
     {
+<<<<<<< HEAD
       "Id": "F:\\Semister 2 2023\\D202 Software Process\\EchelonEnforcers\\EchelonEnforcers\\wwwroot\\Images\\Echelon Enforcers Nav Logo.png",
       "PackagePath": "staticwebassets\\Images\\Echelon Enforcers Nav Logo.png"
     },
@@ -17,6 +18,8 @@
       "PackagePath": "staticwebassets\\css\\Index.css"
     },
     {
+=======
+>>>>>>> a22c04f05efee47888f5330dceafe892c783e142
       "Id": "F:\\Semister 2 2023\\D202 Software Process\\EchelonEnforcers\\EchelonEnforcers\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

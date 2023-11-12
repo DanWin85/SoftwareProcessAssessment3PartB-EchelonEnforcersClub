@@ -80,6 +80,7 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\Echelon Enforcers .png))</OriginalItemSpec>
     </StaticWebAsset>
+<<<<<<< HEAD
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\Echelon Enforcers Nav Logo.png))">
       <SourceType>Package</SourceType>
       <SourceId>EchelonEnforcers</SourceId>
@@ -96,6 +97,8 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\Echelon Enforcers Nav Logo.png))</OriginalItemSpec>
     </StaticWebAsset>
+=======
+>>>>>>> a22c04f05efee47888f5330dceafe892c783e142
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\js\site.js))">
       <SourceType>Package</SourceType>
       <SourceId>EchelonEnforcers</SourceId>

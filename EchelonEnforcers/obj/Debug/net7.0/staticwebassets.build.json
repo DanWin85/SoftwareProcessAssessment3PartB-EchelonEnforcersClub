@@ -1,6 +1,10 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "Hash": "cxuZYqQElWknM+zS9QGBqyeYzXmea2weafWe3ldTL+k=",
+=======
+  "Hash": "86E9MHkc3KFMoczawGFZqNLU+1DMU93qViKvxYDiSa8=",
+>>>>>>> a22c04f05efee47888f5330dceafe892c783e142
   "Source": "EchelonEnforcers",
   "BasePath": "_content/EchelonEnforcers",
   "Mode": "Default",
@@ -1139,6 +1143,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\Echelon Enforcers .png"
     },
     {
+<<<<<<< HEAD
       "Identity": "F:\\Semister 2 2023\\D202 Software Process\\EchelonEnforcers\\EchelonEnforcers\\wwwroot\\Images\\Echelon Enforcers Nav Logo.png",
       "SourceId": "EchelonEnforcers",
       "SourceType": "Discovered",
@@ -1156,6 +1161,8 @@
       "OriginalItemSpec": "wwwroot\\Images\\Echelon Enforcers Nav Logo.png"
     },
     {
+=======
+>>>>>>> a22c04f05efee47888f5330dceafe892c783e142
       "Identity": "F:\\Semister 2 2023\\D202 Software Process\\EchelonEnforcers\\EchelonEnforcers\\wwwroot\\js\\site.js",
       "SourceId": "EchelonEnforcers",
       "SourceType": "Discovered",

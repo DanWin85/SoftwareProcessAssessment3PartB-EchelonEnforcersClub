@@ -6,10 +6,25 @@
     },
     "mssql2": {
       "type": "mssql.local",
+<<<<<<< HEAD
       "connectionId": "ConnectionStrings:NewsDbContext"
     },
     "mssql3": {
       "type": "mssql.local",
+=======
+      "connectionId": "ConnectionStrings:EchelonEnforcersContext"
+    },
+    "mssql3": {
+      "type": "mssql.local",
+      "connectionId": "ConnectionStrings:NewsContext"
+    },
+    "mssql4": {
+      "type": "mssql.local",
+      "connectionId": "ConnectionStrings:NewsDbContext"
+    },
+    "mssql5": {
+      "type": "mssql.local",
+>>>>>>> a22c04f05efee47888f5330dceafe892c783e142
       "connectionId": "ConnectionStrings:CompetitionsDbContext"
     }
   }
