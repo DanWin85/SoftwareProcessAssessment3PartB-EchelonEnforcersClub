@@ -16,7 +16,27 @@ html {
   position: relative;
   min-height: 100%;
 }
+.nav-logo {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    opacity: .2;
+}
 
-body {
-  margin-bottom: 60px;
+#container-div {
+    margin-left: 400px;
+}
+
+#container-title {
+    margin-left: 410px;
+    padding-top: 100px;
+}
+
+.form-check-input{
+    color: white;
+}
+
+#comp-button{
+    margin-top: 20px;
 }

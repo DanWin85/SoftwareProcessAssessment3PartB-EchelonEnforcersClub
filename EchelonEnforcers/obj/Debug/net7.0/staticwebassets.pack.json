@@ -5,6 +5,18 @@
       "PackagePath": "staticwebassets\\EchelonEnforcers.bundle.scp.css"
     },
     {
+      "Id": "F:\\Semister 2 2023\\D202 Software Process\\EchelonEnforcers\\EchelonEnforcers\\wwwroot\\Images\\Echelon Enforcers .png",
+      "PackagePath": "staticwebassets\\Images\\Echelon Enforcers .png"
+    },
+    {
+      "Id": "F:\\Semister 2 2023\\D202 Software Process\\EchelonEnforcers\\EchelonEnforcers\\wwwroot\\Images\\Echelon Enforcers Nav Logo.png",
+      "PackagePath": "staticwebassets\\Images\\Echelon Enforcers Nav Logo.png"
+    },
+    {
+      "Id": "F:\\Semister 2 2023\\D202 Software Process\\EchelonEnforcers\\EchelonEnforcers\\wwwroot\\css\\Index.css",
+      "PackagePath": "staticwebassets\\css\\Index.css"
+    },
+    {
       "Id": "F:\\Semister 2 2023\\D202 Software Process\\EchelonEnforcers\\EchelonEnforcers\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

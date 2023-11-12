@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "zJxRUWqipHnd0wLp0mQGi3pTZ7n/93t/1vX3J+IA9p0=",
+  "Hash": "cxuZYqQElWknM+zS9QGBqyeYzXmea2weafWe3ldTL+k=",
   "Source": "EchelonEnforcers",
   "BasePath": "_content/EchelonEnforcers",
   "Mode": "Default",
@@ -1071,6 +1071,23 @@
       "OriginalItemSpec": "F:\\Semister 2 2023\\D202 Software Process\\EchelonEnforcers\\EchelonEnforcers\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\EchelonEnforcers.bundle.scp.css"
     },
     {
+      "Identity": "F:\\Semister 2 2023\\D202 Software Process\\EchelonEnforcers\\EchelonEnforcers\\wwwroot\\css\\Index.css",
+      "SourceId": "EchelonEnforcers",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\Semister 2 2023\\D202 Software Process\\EchelonEnforcers\\EchelonEnforcers\\wwwroot\\",
+      "BasePath": "_content/EchelonEnforcers",
+      "RelativePath": "css/Index.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Index.css"
+    },
+    {
       "Identity": "F:\\Semister 2 2023\\D202 Software Process\\EchelonEnforcers\\EchelonEnforcers\\wwwroot\\css\\site.css",
       "SourceId": "EchelonEnforcers",
       "SourceType": "Discovered",
@@ -1103,6 +1120,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "F:\\Semister 2 2023\\D202 Software Process\\EchelonEnforcers\\EchelonEnforcers\\wwwroot\\Images\\Echelon Enforcers .png",
+      "SourceId": "EchelonEnforcers",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\Semister 2 2023\\D202 Software Process\\EchelonEnforcers\\EchelonEnforcers\\wwwroot\\",
+      "BasePath": "_content/EchelonEnforcers",
+      "RelativePath": "Images/Echelon Enforcers .png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Echelon Enforcers .png"
+    },
+    {
+      "Identity": "F:\\Semister 2 2023\\D202 Software Process\\EchelonEnforcers\\EchelonEnforcers\\wwwroot\\Images\\Echelon Enforcers Nav Logo.png",
+      "SourceId": "EchelonEnforcers",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\Semister 2 2023\\D202 Software Process\\EchelonEnforcers\\EchelonEnforcers\\wwwroot\\",
+      "BasePath": "_content/EchelonEnforcers",
+      "RelativePath": "Images/Echelon Enforcers Nav Logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Echelon Enforcers Nav Logo.png"
     },
     {
       "Identity": "F:\\Semister 2 2023\\D202 Software Process\\EchelonEnforcers\\EchelonEnforcers\\wwwroot\\js\\site.js",

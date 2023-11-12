@@ -1,0 +1,45 @@
+﻿body {
+    overflow-x:hidden;
+}
+
+.Index-logo{
+  position: center;
+  margin-top: 10em;
+  margin-left: 35em;
+  opacity: 0.1
+}
+#scrollContainer {
+    position:relative; 
+    margin-top: 411px;
+    width: 100%;
+    background-color: rgba(211,211,211, 0.9);
+    z-index: 1;
+    padding-bottom: 50px;
+}
+#main-heading{
+    font-size: 100px;
+}
+.heading{
+    align-content:center;
+    align-self:center;
+     text-align: center;
+    padding: 10px 0 10px;
+    font-family:Poppins;
+}
+.sub-heading {
+    align-content: center;
+    align-self: center;
+    text-align: center;
+    font-family: Poppins;
+}
+us-text {
+    padding-left:16px;
+    justify-content:center;
+    text-align: center;
+    align-content: center;
+    align-self: center;
+}
+p{
+    text-align:center;
+
+}
