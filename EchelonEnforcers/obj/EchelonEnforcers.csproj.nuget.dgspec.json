@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Semister 2 2023\\D202 Software Process\\EchelonEnforcers\\EchelonEnforcers\\EchelonEnforcers.csproj": {}
+    "C:\\Users\\Admin\\source\\repos\\SoftwareProcessAssessment3PartB-EchelonEnforcersClub\\EchelonEnforcers\\EchelonEnforcers.csproj": {}
   },
   "projects": {
-    "F:\\Semister 2 2023\\D202 Software Process\\EchelonEnforcers\\EchelonEnforcers\\EchelonEnforcers.csproj": {
+    "C:\\Users\\Admin\\source\\repos\\SoftwareProcessAssessment3PartB-EchelonEnforcersClub\\EchelonEnforcers\\EchelonEnforcers.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Semister 2 2023\\D202 Software Process\\EchelonEnforcers\\EchelonEnforcers\\EchelonEnforcers.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\SoftwareProcessAssessment3PartB-EchelonEnforcersClub\\EchelonEnforcers\\EchelonEnforcers.csproj",
         "projectName": "EchelonEnforcers",
-        "projectPath": "F:\\Semister 2 2023\\D202 Software Process\\EchelonEnforcers\\EchelonEnforcers\\EchelonEnforcers.csproj",
+        "projectPath": "C:\\Users\\Admin\\source\\repos\\SoftwareProcessAssessment3PartB-EchelonEnforcersClub\\EchelonEnforcers\\EchelonEnforcers.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "F:\\Semister 2 2023\\D202 Software Process\\EchelonEnforcers\\EchelonEnforcers\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\source\\repos\\SoftwareProcessAssessment3PartB-EchelonEnforcersClub\\EchelonEnforcers\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
