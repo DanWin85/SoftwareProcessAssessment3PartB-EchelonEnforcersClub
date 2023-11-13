@@ -18,8 +18,8 @@
       "connectionId": "ConnectionStrings:NewsDbContext"
     },
     "mssql5": {
-      "type": "mssql.local",
-      "connectionId": "ConnectionStrings:CompetitionsDbContext"
+      "connectionId": "ConnectionStrings:CompetitionsDbContext",
+      "type": "mssql.local"
     }
   }
 }
