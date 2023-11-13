@@ -176,6 +176,13 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+<<<<<<< HEAD
+=======
+[C:/Users/Admin/source/repos/SoftwareProcessAssessment3PartB-EchelonEnforcersClub/EchelonEnforcers/Pages/Competitions.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcGV0aXRpb25zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+>>>>>>> 8f00e8d7bceaf883b24d68856771ea33631cceae
 [C:/Users/Admin/source/repos/SoftwareProcessAssessment3PartB-EchelonEnforcersClub/EchelonEnforcers/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
