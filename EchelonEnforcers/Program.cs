@@ -1,25 +1,19 @@
-<<<<<<< HEAD
-﻿using EchelonEnforcers.Data;
-=======
+
 using EchelonEnforcers.Data;
-using EchelonEnforcers.Data.Migrations;
->>>>>>> a22c04f05efee47888f5330dceafe892c783e142
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
-<<<<<<< HEAD
+
 builder.Services.AddDbContext<NewsDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("NewsDbContext") ?? throw new InvalidOperationException("Connection string 'NewsDbContext' not found.")));
 builder.Services.AddDbContext<CompetitionsDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("CompetitionsDbContext") ?? throw new InvalidOperationException("Connection string 'CompetitionsDbContext' not found.")));
-=======
 builder.Services.AddDbContext<CompetitionsDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("CompetitionsDbContext") ?? throw new InvalidOperationException("Connection string 'CompetitionsDbContext' not found.")));
 builder.Services.AddDbContext<NewsDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("NewsDbContext") ?? throw new InvalidOperationException("Connection string 'NewsDbContext' not found.")));
->>>>>>> a22c04f05efee47888f5330dceafe892c783e142
+
 
 
 // Add services to the container.

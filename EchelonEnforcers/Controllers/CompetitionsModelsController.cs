@@ -63,7 +63,7 @@ namespace EchelonEnforcers.Controllers
             if (ModelState.IsValid)
             {
                 competitions.Id = Guid.NewGuid();
-                competitions.Author = User.Identity.Name;
+                //competitions.Author = User.Identity.Name;
                 _context.Add(competitions);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));

@@ -6,17 +6,12 @@
     },
     "mssql2": {
       "type": "mssql",
-<<<<<<< HEAD
+
       "connectionId": "ConnectionStrings:NewsDbContext"
     },
     "mssql3": {
       "type": "mssql",
-=======
       "connectionId": "ConnectionStrings:EchelonEnforcersContext"
-    },
-    "mssql3": {
-      "type": "mssql",
-      "connectionId": "ConnectionStrings:NewsContext"
     },
     "mssql4": {
       "type": "mssql",
@@ -24,7 +19,6 @@
     },
     "mssql5": {
       "type": "mssql",
->>>>>>> a22c04f05efee47888f5330dceafe892c783e142
       "connectionId": "ConnectionStrings:CompetitionsDbContext"
     }
   }
