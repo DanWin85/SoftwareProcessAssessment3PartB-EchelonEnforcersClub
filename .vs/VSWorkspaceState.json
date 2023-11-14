@@ -2,17 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\EchelonEnforcers",
-<<<<<<< HEAD
     "\\EchelonEnforcers\\Controllers",
     "\\EchelonEnforcers\\Data",
     "\\EchelonEnforcers\\Views",
     "\\EchelonEnforcers\\Views\\Home"
   ],
   "SelectedNode": "\\EchelonEnforcers\\Views\\Home\\Index.cshtml",
-=======
-    "\\EchelonEnforcers\\Controllers"
-  ],
-  "SelectedNode": "\\EchelonEnforcers\\Controllers\\HomeController.cs",
->>>>>>> a22c04f05efee47888f5330dceafe892c783e142
   "PreviewInSolutionExplorer": false
 }

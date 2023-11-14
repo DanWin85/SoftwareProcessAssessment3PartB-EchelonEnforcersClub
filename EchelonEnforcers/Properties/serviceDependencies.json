@@ -6,7 +6,6 @@
     },
     "mssql2": {
       "type": "mssql",
-
       "connectionId": "ConnectionStrings:NewsDbContext"
     },
     "mssql3": {

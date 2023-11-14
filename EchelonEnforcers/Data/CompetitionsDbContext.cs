@@ -12,7 +12,6 @@ namespace EchelonEnforcers.Data
 
         public DbSet<Competitions> Competitions { get; set; } = default!;
 
-       
-
+        public DbSet<EchelonEnforcers.Models.Competitions> Competitions { get; set; } = default!;
     }
 }

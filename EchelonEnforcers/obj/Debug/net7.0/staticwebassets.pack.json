@@ -9,7 +9,9 @@
       "PackagePath": "staticwebassets\\Images\\Echelon Enforcers .png"
     },
     {
+
       "Id": "C:\\Users\\Admin\\source\\repos\\SoftwareProcessAssessment3PartB-EchelonEnforcersClub\\EchelonEnforcers\\wwwroot\\Images\\Echelon Enforcers Nav Logo.png",
+      "Id": "F:\\Semister 2 2023\\D202 Software Process\\EchelonEnforcers\\EchelonEnforcers\\wwwroot\\Images\\Echelon Enforcers Nav Logo.png",
       "PackagePath": "staticwebassets\\Images\\Echelon Enforcers Nav Logo.png"
     },
     {
@@ -18,6 +20,9 @@
     },
     {
       "Id": "C:\\Users\\Admin\\source\\repos\\SoftwareProcessAssessment3PartB-EchelonEnforcersClub\\EchelonEnforcers\\wwwroot\\css\\site.css",
+
+      "Id": "F:\\Semister 2 2023\\D202 Software Process\\EchelonEnforcers\\EchelonEnforcers\\wwwroot\\css\\site.css",
+
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {

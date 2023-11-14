@@ -1,10 +1,14 @@
 
 using EchelonEnforcers.Data;
+﻿using EchelonEnforcers.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
+
+
+
 builder.Services.AddDbContext<NewsDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("NewsDbContext") ?? throw new InvalidOperationException("Connection string 'NewsDbContext' not found.")));
 builder.Services.AddDbContext<CompetitionsDbContext>(options =>
@@ -13,8 +17,6 @@ builder.Services.AddDbContext<CompetitionsDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("CompetitionsDbContext") ?? throw new InvalidOperationException("Connection string 'CompetitionsDbContext' not found.")));
 builder.Services.AddDbContext<NewsDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("NewsDbContext") ?? throw new InvalidOperationException("Connection string 'NewsDbContext' not found.")));
-
-
 
 // Add services to the container.
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");

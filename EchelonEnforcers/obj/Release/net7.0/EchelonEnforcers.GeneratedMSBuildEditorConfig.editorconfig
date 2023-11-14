@@ -9,7 +9,11 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = EchelonEnforcers
 build_property.RootNamespace = EchelonEnforcers
+<<<<<<< HEAD
 build_property.ProjectDir = C:\Users\Admin\source\repos\SoftwareProcessAssessment3PartB-EchelonEnforcersClub\EchelonEnforcers\
+=======
+build_property.ProjectDir = E:\Semister 2 2023\D202 Software Process\EchelonEnforcers\EchelonEnforcers\
+>>>>>>> parent of cb1d8ca (Merge branch 'main' of https://github.com/DanWin85/SoftwareProcessAssessment3PartB-EchelonEnforcersClub)
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
@@ -252,6 +256,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+<<<<<<< HEAD
 [C:/Users/Admin/source/repos/SoftwareProcessAssessment3PartB-EchelonEnforcersClub/EchelonEnforcers/Views/Shared/_Layout.cshtml]
+=======
+[E:/Semister 2 2023/D202 Software Process/EchelonEnforcers/EchelonEnforcers/Views/Shared/_Layout.cshtml]
+>>>>>>> parent of cb1d8ca (Merge branch 'main' of https://github.com/DanWin85/SoftwareProcessAssessment3PartB-EchelonEnforcersClub)
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-lvnfsc7dse

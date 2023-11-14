@@ -8,7 +8,6 @@
       "type": "mssql.local",
       "connectionId": "ConnectionStrings:NewsDbContext"
     },
-
     "mssql3": {
       "type": "mssql.local",
       "connectionId": "ConnectionStrings:NewsContext"
@@ -20,6 +19,9 @@
     "mssql5": {
       "connectionId": "ConnectionStrings:CompetitionsDbContext",
       "type": "mssql.local"
+    "mssql3": {
+      "type": "mssql.local",
+      "connectionId": "ConnectionStrings:CompetitionsDbContext"
     }
   }
 }

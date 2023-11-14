@@ -13,10 +13,9 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark p-md-3">
             <div class="container-fluid">
-
                 <a class="navbar-brand" href="Index"><img class="nav-logo" asp-area="" asp-controller="Home" asp-action="Index" src="images\Echelon Enforcers Nav logo.png" height="52" /></a>
-
                 <a class="navbar-brand" href="Index"><img class="nav-logo" asp-area="" asp-controller="Home" asp-action="Index" src="Images/Echelon Enforcers .png" height="72" /></a>
+                <a class="navbar-brand" href="Index"><img class="nav-logo" asp-area="" asp-controller="Home" asp-action="Index" src="images\Echelon Enforcers Nav logo.png" height="52" /></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -58,13 +57,17 @@
         </nav>
     </header>
     <div class="container">
+    <div>
         <main role="main">
             @RenderBody()
         </main>
     </div>
 
+
     @RenderSection("IndexContent", required: false)
 
+
+    @RenderSection("IndexContent", required: false)
     
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

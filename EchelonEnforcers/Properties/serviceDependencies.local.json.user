@@ -2,27 +2,11 @@
   "dependencies": {
     "mssql2": {
       "restored": true,
-<<<<<<< HEAD
       "restoreTime": "2023-11-08T09:12:25.7780059Z"
     },
     "mssql3": {
       "restored": true,
       "restoreTime": "2023-11-08T09:22:47.9988624Z"
-=======
-      "restoreTime": "2023-11-08T02:58:45.0687564Z"
-    },
-    "mssql3": {
-      "restored": true,
-      "restoreTime": "2023-11-08T03:04:04.7302208Z"
-    },
-    "mssql4": {
-      "restored": true,
-      "restoreTime": "2023-11-08T03:35:01.103858Z"
-    },
-    "mssql5": {
-      "restored": true,
-      "restoreTime": "2023-11-08T03:37:18.9502656Z"
->>>>>>> a22c04f05efee47888f5330dceafe892c783e142
     },
     "mssql1": {
       "restored": true,
