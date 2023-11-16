@@ -116,7 +116,7 @@ namespace EchelonEnforcers.Areas.Identity.Pages.Account
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User logged in.");
-                    return LocalRedirect("MembersArea");
+                    return LocalRedirect("~/");
                 }
                 if (result.RequiresTwoFactor)
                 {

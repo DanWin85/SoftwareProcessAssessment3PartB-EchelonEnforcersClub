@@ -25,7 +25,6 @@ html {
 }
 
 #container-div {
-
     margin-left: 400px;
 }
 
@@ -40,4 +39,7 @@ html {
 
 #comp-button{
     margin-top: 20px;
+}
+.Register-Div{
+    margin-top:100px;
 }
