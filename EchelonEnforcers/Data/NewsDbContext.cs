@@ -18,9 +18,6 @@ namespace EchelonEnforcers.Data
         {
         }
 
-        public DbSet<EchelonEnforcers.Models.NewsModel> NewsModel { get; set; } = default!;
-
-
-        public DbSet<EchelonEnforcers.Models.NewsModel> News { get; set; } = default!;
+        public DbSet<NewsModel> NewsModel { get; set; } = default!;
     }
 }

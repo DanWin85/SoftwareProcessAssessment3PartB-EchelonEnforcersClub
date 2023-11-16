@@ -14,16 +14,11 @@
         <nav class="navbar navbar-expand-lg navbar-dark p-md-3">
             <div class="container-fluid">
                 <a class="navbar-brand" href="Index"><img class="nav-logo" asp-area="" asp-controller="Home" asp-action="Index" src="images\Echelon Enforcers Nav logo.png" height="52" /></a>
-                <a class="navbar-brand" href="Index"><img class="nav-logo" asp-area="" asp-controller="Home" asp-action="Index" src="Images/Echelon Enforcers .png" height="72" /></a>
-                <a class="navbar-brand" href="Index"><img class="nav-logo" asp-area="" asp-controller="Home" asp-action="Index" src="images\Echelon Enforcers Nav logo.png" height="52" /></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 News
@@ -33,13 +28,6 @@
                                 <li><a class="dropdown-item" asp-area="" asp-controller="NewsModels" asp-action="Index">View the news</a></li>
                                 <li><a class="dropdown-item" asp-area="" asp-controller="NewsModels" asp-action="Delete">Delete the news </a></li>
                             </ul>
-                        <li class="nav-item">
-                            <a class="nav-link" href="pages/News">News</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="\Pages\Competitions.cshtml">Competitions</a>
-                        </li>
-                    
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                            Competitions
@@ -56,8 +44,7 @@
             </div>
         </nav>
     </header>
-    <div class="container">
-    <div>
+        <div class="container">
         <main role="main">
             @RenderBody()
         </main>
@@ -66,8 +53,6 @@
 
     @RenderSection("IndexContent", required: false)
 
-
-    @RenderSection("IndexContent", required: false)
     
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
