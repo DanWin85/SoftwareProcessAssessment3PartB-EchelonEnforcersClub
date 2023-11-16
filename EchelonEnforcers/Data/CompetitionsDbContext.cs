@@ -10,6 +10,6 @@ namespace EchelonEnforcers.Data
         {
         }
 
-        public DbSet<Competitions> Competitions { get; set; } = default!;
+        public DbSet<CompetitionsModel> CompetitionsModel { get; set; } = default!;
     }
 }

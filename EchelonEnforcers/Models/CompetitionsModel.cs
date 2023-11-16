@@ -1,8 +1,9 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿
+using System.ComponentModel.DataAnnotations;
 
 namespace EchelonEnforcers.Models
 {
-    public class Competitions
+    public class CompetitionsModel
     {
         public Guid Id { get; set; }
 

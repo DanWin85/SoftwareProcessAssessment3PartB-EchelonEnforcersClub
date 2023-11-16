@@ -36,20 +36,10 @@ button.accept-policy[b-lvnfsc7dse] {
   line-height: inherit;
 }
 
-.footer[b-lvnfsc7dse] {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /*white-space: nowrap;*/
-  line-height: 60px;
-}
-
 .bg-img[b-lvnfsc7dse]{
     background-attachment:fixed;
     background-repeat:no-repeat;
     background-size:cover; 
-    height: 100vh;
-    width: 100vw;
     object-fit: cover;
     filter:brightness(0.6);
     position:absolute;

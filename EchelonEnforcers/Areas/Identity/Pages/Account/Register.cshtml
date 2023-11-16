@@ -2,12 +2,8 @@
 @model RegisterModel
 @{
     ViewData["Title"] = "Register";
-    Layout = "_Layout";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
-
-<h1 id="container-title" class="text-light">@ViewData["Title"]</h1>
-
 <div id="container-div" class="row">
     <div class="Register-Div">
         <h1 class="text-light">@ViewData["Title"]</h1>
@@ -34,9 +30,9 @@
                     </div>
                     <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-primary">Register</button>
                 </form>
-</div>
-</div>
-</div>
+            </div>
+        </div>
+    </div>
 </div>
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />

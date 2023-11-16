@@ -2,19 +2,15 @@
 @model LoginModel
 @{
     ViewData["Title"] = "Log in";
-    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <h1 id="container-title" class="text-light">@ViewData["Title"]</h1>
-
-
-<h1 class="text-light">@ViewData["Title"]</h1>
-    <div id="container-div" class="row">
+<div id="container-div" class="row">
     <div class="col-md-4">
         <section>
             <form id="account" method="post">
                 <h2 class="text-light">Use a local account to log in.</h2>
-                <hr />
+                <hr/>
                 <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
                 <div class="form-floating mb-3">
                     <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com" />

@@ -1,0 +1,29 @@
+﻿@model MembersAreaViewModel
+@{
+    ViewData["Title"] = "MembersArea";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<h1 id="news-heading" class="text-light">The News</h1>
+<ul>
+    @foreach (var newsItem in Model.NewsItems)
+    {
+        <li class="text-light">@newsItem.Heading</li>
+        <li class="text-light">@newsItem.Content</li>
+        <li class="text-light">@newsItem.PublishedDate</li>
+        <li class="text-light">@newsItem.Author</li>
+    }
+</ul>
+
+<h1 id="competitions-heading">Upcoming Competitions</h1>
+<ul>
+    @foreach (var Competitions in Model.Competitions)
+    {
+        <li class="text-light">@Competitions.Title</li>
+        <li class="text-light">@Competitions.Content</li>
+        <li class="text-light">@Competitions.Details</li>
+        <li class="text-light">@Competitions.PublishedDate</li>
+        <li class="text-light">@Competitions.Author</li>
+    }
+</ul>

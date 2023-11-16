@@ -11,6 +11,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace EchelonEnforcers.Controllers
 {
+    [Authorize]
     public class NewsModelsController : Controller
     {
         private readonly NewsDbContext _context;
@@ -47,7 +48,6 @@ namespace EchelonEnforcers.Controllers
         }
 
         // GET: NewsModels/Create
-        [Authorize]
         public IActionResult Create()
         {
             return View();

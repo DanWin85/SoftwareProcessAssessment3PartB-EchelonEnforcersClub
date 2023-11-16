@@ -11,6 +11,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace EchelonEnforcers.Controllers
 {
+    [Authorize]
     public class CompetitionsModelsController : Controller
     {
         private readonly CompetitionsDbContext _context;
@@ -23,20 +24,20 @@ namespace EchelonEnforcers.Controllers
         // GET: CompetitionsModel
         public async Task<IActionResult> Index()
         {
-              return _context.Competitions != null ? 
-                          View(await _context.Competitions.ToListAsync()) :
+              return _context.CompetitionsModel != null ? 
+                          View(await _context.CompetitionsModel.ToListAsync()) :
                           Problem("Entity set 'CompetitionsDbContext.Competitions'  is null.");
         }
 
         // GET: CompetitionsModel/Details/5
         public async Task<IActionResult> Details(Guid? id)
         {
-            if (id == null || _context.Competitions == null)
+            if (id == null || _context.CompetitionsModel == null)
             {
                 return NotFound();
             }
 
-            var competitions = await _context.Competitions
+            var competitions = await _context.CompetitionsModel
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (competitions == null)
             {
@@ -58,7 +59,7 @@ namespace EchelonEnforcers.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Title,Content,PublishedDate,Author")] Competitions competitions)
+        public async Task<IActionResult> Create([Bind("Id,Title,Content,PublishedDate,Author")] CompetitionsModel competitions)
         {
             if (ModelState.IsValid)
             {
@@ -74,12 +75,12 @@ namespace EchelonEnforcers.Controllers
         // GET: CompetitionsModel/Edit/5
         public async Task<IActionResult> Edit(Guid? id)
         {
-            if (id == null || _context.Competitions == null)
+            if (id == null || _context.CompetitionsModel == null)
             {
                 return NotFound();
             }
 
-            var competitions = await _context.Competitions.FindAsync(id);
+            var competitions = await _context.CompetitionsModel.FindAsync(id);
             if (competitions == null)
             {
                 return NotFound();
@@ -92,7 +93,7 @@ namespace EchelonEnforcers.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(Guid id, [Bind("Id,Title,Content,PublishedDate,Author")] Competitions competitions)
+        public async Task<IActionResult> Edit(Guid id, [Bind("Id,Title,Content,PublishedDate,Author")] CompetitionsModel competitions)
         {
             if (id != competitions.Id)
             {
@@ -125,12 +126,12 @@ namespace EchelonEnforcers.Controllers
         // GET: CompetitionsModel/Delete/5
         public async Task<IActionResult> Delete(Guid? id)
         {
-            if (id == null || _context.Competitions == null)
+            if (id == null || _context.CompetitionsModel == null)
             {
                 return NotFound();
             }
 
-            var competitions = await _context.Competitions
+            var competitions = await _context.CompetitionsModel
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (competitions == null)
             {
@@ -145,14 +146,14 @@ namespace EchelonEnforcers.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(Guid id)
         {
-            if (_context.Competitions == null)
+            if (_context.CompetitionsModel == null)
             {
                 return Problem("Entity set 'CompetitionsDbContext.Competitions'  is null.");
             }
-            var competitions = await _context.Competitions.FindAsync(id);
+            var competitions = await _context.CompetitionsModel.FindAsync(id);
             if (competitions != null)
             {
-                _context.Competitions.Remove(competitions);
+                _context.CompetitionsModel.Remove(competitions);
             }
             
             await _context.SaveChangesAsync();
@@ -161,7 +162,7 @@ namespace EchelonEnforcers.Controllers
 
         private bool CompetitionsExists(Guid id)
         {
-          return (_context.Competitions?.Any(e => e.Id == id)).GetValueOrDefault();
+          return (_context.CompetitionsModel?.Any(e => e.Id == id)).GetValueOrDefault();
         }
     }
 }

@@ -19,6 +19,8 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
+                        @if (User.Identity.IsAuthenticated)
+                            {
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 News
@@ -28,16 +30,19 @@
                                 <li><a class="dropdown-item" asp-area="" asp-controller="NewsModels" asp-action="Index">View the news</a></li>
                                 <li><a class="dropdown-item" asp-area="" asp-controller="NewsModels" asp-action="Delete">Delete the news </a></li>
                             </ul>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                           Competitions
-                        </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" asp-area="" asp-controller="CompetitionsModels" asp-action="Create">Add a Competition</a></li>
-                            <li><a class="dropdown-item" asp-area="" asp-controller="CompetitionsModels" asp-action="Details">Upcoming Competitions</a></li>
-                            <li><a class="dropdown-item" asp-area="" asp-controller="CompetitionsModels" asp-action="Delete">Delete</a></li>
-                        </ul>
-                    </li>    
+                            
+                        </li>   
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Competitions
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <li><a class="dropdown-item" asp-area="" asp-controller="CompetitionsModels" asp-action="Create">Add a Competition</a></li>
+                                        <li><a class="dropdown-item" asp-area="" asp-controller="CompetitionsModels" asp-action="Details">Upcoming Competitions</a></li>
+                                        <li><a class="dropdown-item" asp-area="" asp-controller="CompetitionsModels" asp-action="Delete">Delete</a></li>
+                                    </ul>
+                                </li>
+                            }
                     </ul>
                     <partial name="_LoginPartial" />
                 </div>
