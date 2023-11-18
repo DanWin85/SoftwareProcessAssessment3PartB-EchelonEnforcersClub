@@ -48,7 +48,6 @@ namespace EchelonEnforcers.Controllers
         }
 
         // GET: CompetitionsModels/Create
-        [Authorize]
         public IActionResult Create()
         {
             return View();
@@ -59,7 +58,7 @@ namespace EchelonEnforcers.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Title,Content,PublishedDate,Author")] CompetitionsModel competitions)
+        public async Task<IActionResult> Create([Bind("Id,Title,Content,Details,Date,Location,PublishedDate,Author")] CompetitionsModel competitions)
         {
             if (ModelState.IsValid)
             {

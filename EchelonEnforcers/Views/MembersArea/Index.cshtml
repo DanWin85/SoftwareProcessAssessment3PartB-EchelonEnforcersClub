@@ -18,34 +18,31 @@
                 <td class="text-light">@newsItem.Content</td>
             </tr>
             <tr>
-                <td class="text-light" colspan="2">@newsItem.PublishedDate.ToString("dd/MM/yyyy h:mm:ss tt"). Written by: @newsItem.Author</td>
+                <td class="text-light" colspan="2">@newsItem.PublishedDate.ToString("dd/MM/yyyy h:mm:ss tt"). Published by: @newsItem.Author</td>
             </tr>
     </tbody>
 </table>
-<br/>
 }
 
-<h1 id="competitions-heading">Upcoming Competitions</h1>
-<table class="table table-bordered">
-    <thead>
-        <tr>
-            <th class="text-light">Title</th>
-            <th class="text-light">Content</th>
-            <th class="text-light">Details</th>
-            <th class="text-light">Published Date</th>
-            <th class="text-light">Author</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var competition in Model.Competitions)
+<h1 id="competitions-heading" class="text-light">Upcoming Competitions</h1>
+ @foreach (var competition in Model.Competitions)
         {
+<table class="table table-bordered">
+    <tbody>
+       
             <tr>
                 <td class="text-light">@competition.Title</td>
-                <td class="text-light">@competition.Content</td>
-                <td class="text-light">@competition.Details</td>
-                <td class="text-light">@competition.PublishedDate</td>
-                <td class="text-light">@competition.Author</td>
             </tr>
-        }
+            <tr>
+                <td class="text-light">@competition.Content</td>
+            </tr>
+            <tr>
+                <td class="text-light">@competition.Details</td>
+            </tr>
+            <tr>
+                <td class="text-light" colspan="2">@competition.PublishedDate.ToString("dd/MM/yyyy"). Published by: @competition.Author</td>
+            </tr>
+        
     </tbody>
 </table>
+}

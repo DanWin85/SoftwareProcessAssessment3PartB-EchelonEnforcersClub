@@ -2,7 +2,6 @@
 for details on configuring this project to bundle and minify static web assets. */
 
 
-
 .btn-primary {
   color: #fff;
   background-color: #1b6ec2;
@@ -10,6 +9,7 @@ for details on configuring this project to bundle and minify static web assets. 
 }
 
 .nav-logo {
+    background-image: url("\wwwroot\Images\Echelon Enforcers Nav Logo.png");
     content: '';
     position: absolute;
     z-index: -1;

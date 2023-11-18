@@ -12,7 +12,9 @@ namespace EchelonEnforcers.Models
         public string Title { get; set; }
         public string Content { get; set; }
 
-        public string Details { get; set; } 
+        public string Details { get; set; }
+        public DateTime DateTime { get; set; }
+        public string Location { get; set; }
         [DataType(DataType.Date)]
         public DateTime PublishedDate { get; set; }
 
