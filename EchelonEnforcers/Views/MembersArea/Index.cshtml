@@ -1,0 +1,51 @@
+﻿@model MembersAreaViewModel
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<h1 id="news-heading" class="text-light">The News</h1>
+@foreach (var newsItem in Model.NewsItems)
+{
+<table class="table table-bordered">
+    <tbody>
+       
+            <tr>
+                <td class="text-light">@newsItem.Heading</td>
+            </tr>
+            <tr>
+                <td class="text-light">@newsItem.Content</td>
+            </tr>
+            <tr>
+                <td class="text-light" colspan="2">@newsItem.PublishedDate.ToString("dd/MM/yyyy h:mm:ss tt"). Written by: @newsItem.Author</td>
+            </tr>
+    </tbody>
+</table>
+<br/>
+}
+
+<h1 id="competitions-heading">Upcoming Competitions</h1>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th class="text-light">Title</th>
+            <th class="text-light">Content</th>
+            <th class="text-light">Details</th>
+            <th class="text-light">Published Date</th>
+            <th class="text-light">Author</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var competition in Model.Competitions)
+        {
+            <tr>
+                <td class="text-light">@competition.Title</td>
+                <td class="text-light">@competition.Content</td>
+                <td class="text-light">@competition.Details</td>
+                <td class="text-light">@competition.PublishedDate</td>
+                <td class="text-light">@competition.Author</td>
+            </tr>
+        }
+    </tbody>
+</table>

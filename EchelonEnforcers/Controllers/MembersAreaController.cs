@@ -15,7 +15,7 @@ namespace EchelonEnforcers.Controllers
             this.competitionsDbContext = competitionsDbContext;
         }
 
-        public IActionResult MembersArea()
+        public IActionResult Index()
         {
             var viewModel = new MembersAreaViewModel
             {

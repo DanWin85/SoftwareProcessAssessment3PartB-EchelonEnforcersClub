@@ -1,6 +1,5 @@
 
 using EchelonEnforcers.Data;
-﻿using EchelonEnforcers.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -52,6 +51,9 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+app.MapControllerRoute(
+    name: "Members Area",
+    pattern: "{controller=MembersArea}/{action=Index}/{id?}");
 
 
 app.MapRazorPages();

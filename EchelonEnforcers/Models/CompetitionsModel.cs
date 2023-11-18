@@ -1,8 +1,10 @@
 ﻿
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace EchelonEnforcers.Models
 {
+    [Table("Competitions")]
     public class CompetitionsModel
     {
         public Guid Id { get; set; }
