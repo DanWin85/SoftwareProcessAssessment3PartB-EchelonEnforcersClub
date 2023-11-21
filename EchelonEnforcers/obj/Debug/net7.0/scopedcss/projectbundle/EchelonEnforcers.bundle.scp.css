@@ -48,3 +48,6 @@ button.accept-policy[b-lvnfsc7dse] {
     z-index: -1;
     opacity: 2;
 }
+a#home-link[b-lvnfsc7dse]{
+    display:inline;
+}

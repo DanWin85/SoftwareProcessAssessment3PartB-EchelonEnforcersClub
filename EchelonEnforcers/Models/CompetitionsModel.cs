@@ -1,5 +1,4 @@
-﻿
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace EchelonEnforcers.Models
@@ -14,6 +13,7 @@ namespace EchelonEnforcers.Models
 
         public string Details { get; set; }
         [DataType(DataType.Date)]
+        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:dd-MM-yyyy}")]
         public DateTime DateTime { get; set; }
         public string Location { get; set; }
         
@@ -21,5 +21,9 @@ namespace EchelonEnforcers.Models
 
         public string Author { get; set; }
 
+        public CompetitionsModel()
+        {
+            DateTime = DateTime.Now;
+        }
     }
 }

@@ -6,7 +6,7 @@
 
 
 <h1 id="news-heading" class="text-light">The News</h1>
-@foreach (var newsItem in Model.NewsItems)
+@foreach (var newsItem in Model.NewsItems.OrderByDescending(item => item.PublishedDate).Take(3))
 {
 <table class="table table-bordered">
     <tbody>
@@ -18,7 +18,7 @@
                 <td class="text-light">@newsItem.Content</td>
             </tr>
             <tr>
-                <td class="text-light" colspan="2">@newsItem.PublishedDate.ToString("dd/MM/yyyy h:mm:ss tt"). Published by: @newsItem.Author</td>
+                <td class="text-light" colspan="2">@newsItem.PublishedDate.ToString("dd/MM/yyyy"). Published by: @newsItem.Author</td>
             </tr>
     </tbody>
 </table>
@@ -38,6 +38,12 @@
             </tr>
             <tr>
                 <td class="text-light">@competition.Details</td>
+            </tr>
+            <tr>
+                <td class="text-light">@competition.DateTime</td>
+            </tr>
+            <tr>
+                <td class="text-light">@competition.Location</td>
             </tr>
             <tr>
                 <td class="text-light" colspan="2">@competition.PublishedDate.ToString("dd/MM/yyyy"). Published by: @competition.Author</td>

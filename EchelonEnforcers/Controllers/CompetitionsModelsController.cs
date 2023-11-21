@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
-using EchelonEnforcers.Data;
+﻿using EchelonEnforcers.Data;
 using EchelonEnforcers.Models;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
 
 namespace EchelonEnforcers.Controllers
 {
@@ -15,10 +11,12 @@ namespace EchelonEnforcers.Controllers
     public class CompetitionsModelsController : Controller
     {
         private readonly CompetitionsDbContext _context;
+        private readonly UserManager<IdentityUser> _userManager;
 
-        public CompetitionsModelsController(CompetitionsDbContext context)
+        public CompetitionsModelsController(CompetitionsDbContext context, UserManager<IdentityUser> userManager)
         {
             _context = context;
+            _userManager = userManager;
         }
 
         // GET: CompetitionsModel
@@ -50,7 +48,15 @@ namespace EchelonEnforcers.Controllers
         // GET: CompetitionsModels/Create
         public IActionResult Create()
         {
-            return View();
+            var competitionsModel = new CompetitionsModel();
+
+            // Get the current logged-in user
+            var currentUser = _userManager.GetUserAsync(User).Result;
+
+            // Set the Author property to the username (you can change this based on your user model)
+            competitionsModel.Author = currentUser.UserName;
+
+            return View(competitionsModel);
         }
 
         // POST: CompetitionsModels/Create
@@ -58,13 +64,12 @@ namespace EchelonEnforcers.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Title,Content,Details,Date,Location,PublishedDate,Author")] CompetitionsModel competitions)
+        public async Task<IActionResult> Create( CompetitionsModel competitions)
         {
             if (ModelState.IsValid)
             {
                 competitions.PublishedDate = DateTimeOffset.Now;
                 competitions.Id = Guid.NewGuid();
-                //competitions.Author = User.Identity.Name;
                 _context.Add(competitions);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
