@@ -13,10 +13,11 @@ namespace EchelonEnforcers.Models
         public string Content { get; set; }
 
         public string Details { get; set; }
+        [DataType(DataType.Date)]
         public DateTime DateTime { get; set; }
         public string Location { get; set; }
-        [DataType(DataType.Date)]
-        public DateTime PublishedDate { get; set; }
+        
+        public DateTimeOffset PublishedDate { get; set; }
 
         public string Author { get; set; }
 

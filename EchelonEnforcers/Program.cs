@@ -8,10 +8,10 @@ var builder = WebApplication.CreateBuilder(args);
 
 
 
-builder.Services.AddDbContext<NewsDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("NewsDbContext") ?? throw new InvalidOperationException("Connection string 'NewsDbContext' not found.")));
-builder.Services.AddDbContext<CompetitionsDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("CompetitionsDbContext") ?? throw new InvalidOperationException("Connection string 'CompetitionsDbContext' not found.")));
+//builder.Services.AddDbContext<NewsDbContext>(options =>
+//    options.UseSqlServer(builder.Configuration.GetConnectionString("NewsDbContext") ?? throw new InvalidOperationException("Connection string 'NewsDbContext' not found.")));
+//builder.Services.AddDbContext<CompetitionsDbContext>(options =>
+//    options.UseSqlServer(builder.Configuration.GetConnectionString("CompetitionsDbContext") ?? throw new InvalidOperationException("Connection string 'CompetitionsDbContext' not found.")));
 builder.Services.AddDbContext<CompetitionsDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("CompetitionsDbContext") ?? throw new InvalidOperationException("Connection string 'CompetitionsDbContext' not found.")));
 builder.Services.AddDbContext<NewsDbContext>(options =>

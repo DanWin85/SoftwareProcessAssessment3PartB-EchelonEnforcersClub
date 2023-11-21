@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
-using EchelonEnforcers.Data;
+﻿using EchelonEnforcers.Data;
 using EchelonEnforcers.Models;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
 
 namespace EchelonEnforcers.Controllers
 {
@@ -15,10 +11,12 @@ namespace EchelonEnforcers.Controllers
     public class NewsModelsController : Controller
     {
         private readonly NewsDbContext _context;
+        private readonly UserManager<IdentityUser> _userManager;
 
-        public NewsModelsController(NewsDbContext context)
+        public NewsModelsController(NewsDbContext context, UserManager<IdentityUser> userManager)
         {
             _context = context;
+            _userManager = userManager;
         }
 
         // GET: NewsModels
@@ -48,9 +46,18 @@ namespace EchelonEnforcers.Controllers
         }
 
         // GET: NewsModels/Create
+        [Authorize]
         public IActionResult Create()
         {
-            return View();
+            var newsModel = new NewsModel();
+
+            // Get the current logged-in user
+            var currentUser = _userManager.GetUserAsync(User).Result;
+
+            // Set the Author property to the username (you can change this based on your user model)
+            newsModel.Author = currentUser.UserName;
+
+            return View(newsModel);
         }
 
         // POST: NewsModels/Create
@@ -62,6 +69,7 @@ namespace EchelonEnforcers.Controllers
         {
             if (ModelState.IsValid)
             {
+                newsModel.PublishedDate = DateTimeOffset.Now;
                 newsModel.Id = Guid.NewGuid();
                 _context.Add(newsModel);
                 await _context.SaveChangesAsync();
@@ -71,6 +79,7 @@ namespace EchelonEnforcers.Controllers
         }
 
         // GET: NewsModels/Edit/5
+        [Authorize]
         public async Task<IActionResult> Edit(Guid? id)
         {
             if (id == null || _context.NewsModel == null)
@@ -122,7 +131,7 @@ namespace EchelonEnforcers.Controllers
         }
 
         // GET: NewsModels/Delete/5
-        [Authorize("Admin")]
+        [Authorize]
         public async Task<IActionResult> Delete(Guid? id)
         {
             if (id == null || _context.NewsModel == null)

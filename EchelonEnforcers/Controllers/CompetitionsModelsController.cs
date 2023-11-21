@@ -62,6 +62,7 @@ namespace EchelonEnforcers.Controllers
         {
             if (ModelState.IsValid)
             {
+                competitions.PublishedDate = DateTimeOffset.Now;
                 competitions.Id = Guid.NewGuid();
                 //competitions.Author = User.Identity.Name;
                 _context.Add(competitions);
