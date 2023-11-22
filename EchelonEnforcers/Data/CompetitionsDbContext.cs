@@ -8,6 +8,7 @@ namespace EchelonEnforcers.Data
         public CompetitionsDbContext (DbContextOptions<CompetitionsDbContext> options)
             : base(options)
         {
+            Database.EnsureCreated();
         }
 
         public DbSet<CompetitionsModel> CompetitionsModel { get; set; } = default!;

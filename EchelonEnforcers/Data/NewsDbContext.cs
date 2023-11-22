@@ -10,6 +10,7 @@ namespace EchelonEnforcers.Data
         public NewsDbContext (DbContextOptions<NewsDbContext> options)
             : base(options)
         {
+            Database.EnsureCreated();
         }
 
         public DbSet<NewsModel> NewsModel { get; set; } = default!;
