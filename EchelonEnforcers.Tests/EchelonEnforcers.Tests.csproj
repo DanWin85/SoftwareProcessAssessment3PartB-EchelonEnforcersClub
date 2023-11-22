@@ -9,12 +9,7 @@
     <IsTestProject>true</IsTestProject>
     <BaseOutputPath>bin\</BaseOutputPath>
   </PropertyGroup>
-	<Target Name="CopyDepsJsonFiles" AfterTargets="Publish">
-		<ItemGroup>
-			<DepsJsonFiles Include="$(TargetDir)*.deps.json" />
-		</ItemGroup>
-		<Copy SourceFiles="@(DepsJsonFiles)" DestinationFolder="$(PublishDir)" />
-	</Target>
+	
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.14" />
