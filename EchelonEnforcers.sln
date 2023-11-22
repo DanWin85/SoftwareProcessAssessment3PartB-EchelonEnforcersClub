@@ -5,6 +5,8 @@ VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EchelonEnforcers", "EchelonEnforcers\EchelonEnforcers.csproj", "{0E3D31B0-410B-48EF-9C6B-F5A50F61384E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EchelonEnforcers.Tests", "Echelon Enforcers.Tests\EchelonEnforcers.Tests.csproj", "{5CA15E37-F95C-4D47-A392-198E3C25095D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{0E3D31B0-410B-48EF-9C6B-F5A50F61384E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E3D31B0-410B-48EF-9C6B-F5A50F61384E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E3D31B0-410B-48EF-9C6B-F5A50F61384E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CA15E37-F95C-4D47-A392-198E3C25095D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CA15E37-F95C-4D47-A392-198E3C25095D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CA15E37-F95C-4D47-A392-198E3C25095D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CA15E37-F95C-4D47-A392-198E3C25095D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

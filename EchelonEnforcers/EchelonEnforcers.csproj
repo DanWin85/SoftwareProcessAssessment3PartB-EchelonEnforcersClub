@@ -3,6 +3,7 @@
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
     <Nullable>enable</Nullable>
+	  <PreserveCompilationContext>true</PreserveCompilationContext>
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>aspnet-EchelonEnforcers-8207429c-8a74-47f4-a27b-c889f0ee83f3</UserSecretsId>
   </PropertyGroup>
@@ -18,8 +19,11 @@
     <None Remove="jd14cmuc.p5l~" />
     <None Remove="Views\Index.cshtml.cs~RF13783fc.TMP" />
   </ItemGroup>
+	<Target Name="CopyDepsFiles" AfterTargets="Build">
+		<Copy SourceFiles="$(TargetDir)\..\EchelonEnforcers.deps.json" DestinationFolder="$(TargetDir)" Condition="Exists('$(TargetDir)\..\EchelonEnforcers.deps.json')" />
+	</Target>
 
-  <ItemGroup>
+	<ItemGroup>
     <PackageReference Include="coverlet.collector" Version="6.0.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
