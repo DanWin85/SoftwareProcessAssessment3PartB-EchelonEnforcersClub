@@ -1,4 +1,3 @@
-C:\Users\Admin\source\repos\SoftwareProcessAssessment3PartB-EchelonEnforcersClub\Echelon Enforcers.Tests\bin\Debug\net7.0\CoverletSourceRootsMapping
 C:\Users\Admin\source\repos\SoftwareProcessAssessment3PartB-EchelonEnforcersClub\Echelon Enforcers.Tests\bin\Debug\net7.0\testhost.dll
 C:\Users\Admin\source\repos\SoftwareProcessAssessment3PartB-EchelonEnforcersClub\Echelon Enforcers.Tests\bin\Debug\net7.0\EchelonEnforcers.deps.json
 C:\Users\Admin\source\repos\SoftwareProcessAssessment3PartB-EchelonEnforcersClub\Echelon Enforcers.Tests\bin\Debug\net7.0\EchelonEnforcers.runtimeconfig.json
@@ -656,3 +655,6 @@ C:\Users\Admin\source\repos\SoftwareProcessAssessment3PartB-EchelonEnforcersClub
 C:\Users\Admin\source\repos\SoftwareProcessAssessment3PartB-EchelonEnforcersClub\Echelon Enforcers.Tests\obj\Debug\net7.0\EchelonEnforcers.Tests.pdb
 C:\Users\Admin\source\repos\SoftwareProcessAssessment3PartB-EchelonEnforcersClub\Echelon Enforcers.Tests\obj\Debug\net7.0\EchelonEnforcers.Tests.genruntimeconfig.cache
 C:\Users\Admin\source\repos\SoftwareProcessAssessment3PartB-EchelonEnforcersClub\Echelon Enforcers.Tests\obj\Debug\net7.0\ref\EchelonEnforcers.Tests.dll
+C:\Users\Admin\source\repos\SoftwareProcessAssessment3PartB-EchelonEnforcersClub\Echelon Enforcers.Tests\bin\Debug\net7.0\CoverletSourceRootsMapping_EchelonEnforcers.Tests
+C:\Users\Admin\source\repos\SoftwareProcessAssessment3PartB-EchelonEnforcersClub\Echelon Enforcers.Tests\bin\Debug\net7.0\Castle.Core.dll
+C:\Users\Admin\source\repos\SoftwareProcessAssessment3PartB-EchelonEnforcersClub\Echelon Enforcers.Tests\bin\Debug\net7.0\Moq.dll

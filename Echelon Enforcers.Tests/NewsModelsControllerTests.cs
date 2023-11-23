@@ -40,15 +40,15 @@ namespace Echelon_Enforcers.Tests
                 // Add other properties as needed
             };
 
-            // Convert the newsModel to JSON
+            
             var content = new StringContent(JsonConvert.SerializeObject(newsModel), Encoding.UTF8, "application/json");
 
-            // Act
+            
             var response = await client.PostAsync("/NewsModel/Create", content);
 
-            // Assert
+            
             response.EnsureSuccessStatusCode();
-            // Add additional assertions based on your requirements
+            
         }
     }
 }

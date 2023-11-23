@@ -1,17 +1,9 @@
-using Microsoft.AspNetCore.Mvc.Testing;
 using EchelonEnforcers.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-
-
-
-//builder.Services.AddDbContext<NewsDbContext>(options =>
-//    options.UseSqlServer(builder.Configuration.GetConnectionString("NewsDbContext") ?? throw new InvalidOperationException("Connection string 'NewsDbContext' not found.")));
-//builder.Services.AddDbContext<CompetitionsDbContext>(options =>
-//    options.UseSqlServer(builder.Configuration.GetConnectionString("CompetitionsDbContext") ?? throw new InvalidOperationException("Connection string 'CompetitionsDbContext' not found.")));
 builder.Services.AddDbContext<CompetitionsDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("CompetitionsDbContext") ?? throw new InvalidOperationException("Connection string 'CompetitionsDbContext' not found.")));
 builder.Services.AddDbContext<NewsDbContext>(options =>
@@ -51,9 +43,10 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
-app.MapControllerRoute(
-    name: "Members Area",
-    pattern: "{controller=MembersArea}/{action=Index}/{id?}");
+
+//app.MapControllerRoute(
+//    name: "Members Area",
+//    pattern: "{controller=MembersArea}/{action=Index}/{id?}");
 
 
 app.MapRazorPages();

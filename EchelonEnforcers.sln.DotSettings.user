@@ -1,0 +1,9 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=06384f23_002D9e48_002D4385_002Da04d_002D14a0b1425634/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Create_Competitions_Should_Return_Successful_Response" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::5CA15E37-F95C-4D47-A392-198E3C25095D::net7.0::EchelonEnforcers.Tests.CompetitionsModelsControllerTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=42dee22f_002Db00b_002D4029_002D890c_002D7aa31af67404/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="All tests from &amp;lt;EchelonEnforcers.Tests&amp;gt;" PlatformType="x64" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Project Location="C:\Users\Admin\source\repos\SoftwareProcessAssessment3PartB-EchelonEnforcersClub\Echelon Enforcers.Tests" Presentation="&amp;lt;EchelonEnforcers.Tests&amp;gt;" /&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
